@@ -18,7 +18,7 @@ public class UseScanner {
         System.out.println("PLEASE ENTER SECOND NUMBER:");
         int y = scanner.nextInt();
 
-        System.out.println(Parameterization.doAddition(x, y));
+//        System.out.println(Parameterization.doAddition(x, y));
         System.out.println(Parameterization.doSubtraction(x, y));
         System.out.println(Parameterization.doMultiplication(x, y));
         System.out.println(Parameterization.doDivision(x, y));

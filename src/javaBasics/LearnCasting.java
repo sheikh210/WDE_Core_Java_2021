@@ -5,7 +5,7 @@ public class LearnCasting {
     static int x = 10;
     static double d = 3.14;
 
-    static String number = "3";
+    static String numberString = "3324";
     static char aChar = 'a';
 
     public static void main(String[] args) {
@@ -22,13 +22,13 @@ public class LearnCasting {
         System.out.println((int) d);
 
         // Wrapper classes to convert non-primitive -> primitive and vice versa
-        System.out.println(number);
-        System.out.println(String.valueOf(aChar));
+        System.out.println(numberString);
+        System.out.println(String.valueOf(x));
 
-        System.out.println(Integer.parseInt(number));
-        System.out.println(Double.parseDouble(number));
-        System.out.println(Short.parseShort(number));
-        System.out.println(Long.parseLong(number));
-        System.out.println(Float.parseFloat(number));
+        System.out.println(Integer.parseInt(numberString));
+        System.out.println(Double.parseDouble(numberString));
+        System.out.println(Short.parseShort(numberString));
+        System.out.println(Long.parseLong(numberString));
+        System.out.println(Float.parseFloat(numberString));
     }
 }
