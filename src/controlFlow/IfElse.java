@@ -1,6 +1,6 @@
 package controlFlow;
 
-public class Conditionals {
+public class IfElse {
 
     /*
          Control Flow Statements
