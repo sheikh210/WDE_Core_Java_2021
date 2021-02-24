@@ -3,7 +3,7 @@ package oops;
 public class Polymorphism {
 
     /*
-    Polymorphism is the ability to have multiple methods/functionality with the same name/same functionality,
+    Polymorphism is the ability to have multiple methods/functionality with the same name & same/similar functionality,
         but acting on different numbers/types of objects/variables
 
         2 Types of Polymorphism
@@ -13,7 +13,7 @@ public class Polymorphism {
 
     public static void main(String[] args) {
         printName();
-        printName("Krimo", 23);
+        printName(23L, "Krimo");
         printName(25, "Saidi");
     }
 
@@ -34,8 +34,10 @@ public class Polymorphism {
         RETURN TYPE DOES NOT MATTER
      */
 
-    public static void printName(String asdfkjaslk, int sadfasdf) {
-        System.out.println(asdfkjaslk + " Abdedou\nAge is: " + sadfasdf);
+    public static String printName(long age, String name) {
+        System.out.println(name + ": Abdedou\nAge is: " + age);
+
+        return name + " " + age;
     }
 
 

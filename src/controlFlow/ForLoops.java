@@ -4,7 +4,7 @@ public class ForLoops {
 
     /*
     For-Loops
-        We use for-loops when we know exactly how many times (iterations) we would like the program to run
+        We use for-loops ONLY when we know EXACTLY how many times (iterations) we would like the program to run
      */
 
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class ForLoops {
         String fullName = firstName + " " + lastName;
 
             // Start    // Run while   // Do this at the end of each loop
-        for (int i = 1;     i > 0;              i++) {
+        for (int i = 20;     i > 16;              i--) {
             System.out.println(i + ": " + fullName);
         }
 
