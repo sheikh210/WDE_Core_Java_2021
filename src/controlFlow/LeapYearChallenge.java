@@ -18,10 +18,11 @@ public class LeapYearChallenge {
                 isLeapYear(2020);
                 Returns true
     */
+
     /*
     Write another method getDaysInMonth() which accepts 2 parameters of type int, called month and year
-        If the parameter month is <1 or >12, return -1
-        If the parameter year is <1 or >9999, then return -1
+        If the parameter month is < 1 or > 12, return -1
+        If the parameter year is < 1 or > 9999, then return -1
         This method needs to return the number of days in a month
         BE CAREFUL ABOUT LEAP YEARS (29 days in month 2)
             Examples:
@@ -44,6 +45,7 @@ public class LeapYearChallenge {
         System.out.println("DAYS IN MONTH: " + obj.getDaysInMonth(11, 2019));
         System.out.println("DAYS IN MONTH: " + obj.getDaysInMonth(2, 2021));
         System.out.println("DAYS IN MONTH: " + obj.getDaysInMonth(2, 2020));
+        System.out.println("DAYS IN MONTH: " + obj.getDaysInMonth(2, 4000));
     }
 
     public int getDaysInMonth(int month, int year) {
@@ -54,8 +56,7 @@ public class LeapYearChallenge {
         } else if ((year < 1) || (year > 9999)) {
             return daysInMonth;
         } else {
-
-            switch (month){
+            switch (month) {
                 case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                     daysInMonth = 31;
                     break;
@@ -70,6 +71,7 @@ public class LeapYearChallenge {
                     }
                 }
             }
+
         return daysInMonth;
     }
 
@@ -83,6 +85,7 @@ public class LeapYearChallenge {
             flag = true;
             return flag;
         }
+
         return flag;
     }
 

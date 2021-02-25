@@ -1,0 +1,12 @@
+***INHERITANCE CHALLENGE***
+1. Start with a base class, “Vehicle”
+2. Create a class, “Car” that inherits from the base class
+3. Create another class that inherits “Car”, and is a specific type of car
+4. You should be able to handle steering, changing gears, and moving (acceleration/deceleration)
+5. You will want to appropriately decide where to put the the states/behaviors (variables & methods)
+6. For the specific type of car, make sure you have at least 1 method that is specific to that car
+
+TIP: The way you implement this doesn’t matter as much as HOW you implement it. The things you should care more about are where you’re creating your methods/variables, not what your methods are doing
+
+Current Time:
+Time to Complete: 30 mins
