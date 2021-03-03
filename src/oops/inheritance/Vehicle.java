@@ -36,11 +36,11 @@ public class Vehicle {
     }
 
     public void turnRight() {
-        System.out.println("Turning right...");
+        System.out.println("Turning right --- Vehicle Class");
     }
 
     public void turnLeft() {
-        System.out.println("Turning left");
+        System.out.println("Turning left --- Vehicle Class");
     }
 
 

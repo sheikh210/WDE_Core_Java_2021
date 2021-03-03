@@ -1,0 +1,38 @@
+***INHERITANCE CHALLENGE 2***
+A carpet company has asked you to write an application that calculate the price of
+carpeting for rectangular rooms. To calculate the price, you multiply the area of
+the floor (width * length), by the price per square meter of the carpet.
+For example, the area of a floor with length of 12 meters and width of 10 meters
+(12 x 10) is 120 sq. meters. To cover the floor with a carpet that costs $8/sq meter
+would cost $960 (120 * 8)
+
+1. Write a class named 'Floor'. The class needs 2 fields with names `width` & `length`
+   of type double
+2. The class needs to have one constructor with parameters `width` and `length`, and
+   it needs to initialize the fields
+3. In case width is < 0, set the width field value to 0 - Do the same for length
+4. Write the following instance method: getArea(), accepting 0 parameters, and it needs
+   to return the calculated area (width * length)
+
+5. Write another class named 'Carpet'. The class needs 1 field with the name `cost` of
+   type double
+6. The class needs to have one constructor with parameter `cost` of type double and
+   it needs to initialize the field
+7. In case cost is < 0, set the `cost` field value to 0
+8. Write the following instance method: getCost(), accepting 0 parameters, and it needs
+   to return the value of the `cost` field
+
+9. Write another class named `Calculator`. The class needs 2 fields: `floor` of type Floor,
+   and `carpet` of type Carpet
+10. The class needs to have one constructor with parameters `floor` of type Floor and
+    `carpet` of type Carpet, and it needs to initialize the fields
+11. Write the following instance method: getTotalCost(), accepting 0 parameters, and it
+    needs to return the calculated total cost to cover the floor with a carpet
+
+**NOTES:
+    - All methods should be instance methods (not static)
+    - Each class should be its own file
+    - Create a 4th class to test your code via main()
+
+Current Time:
+Time to Complete: 30 mins

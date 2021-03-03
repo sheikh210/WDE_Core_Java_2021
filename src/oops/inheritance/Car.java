@@ -27,6 +27,7 @@ public class Car extends Vehicle {
 
     @Override
     public void brake(int speedToDecreaseBy) {
+
         super.accelerate(speedToDecreaseBy);
     }
 

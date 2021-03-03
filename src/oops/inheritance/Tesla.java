@@ -16,4 +16,15 @@ public class Tesla extends Car {
     public void turnOff() {
         System.out.println("Turning battery off...");
     }
+
+    @Override
+    public void turnRight() {
+        System.out.println("Turning Right --- Tesla Class");
+    }
+
+    @Override
+    public void turnLeft() {
+        System.out.println("Turning Left --- Tesla Class");
+    }
+
 }
