@@ -1,5 +1,7 @@
 ***COMPOSITION CHALLENGE***
 Create a single room of a house, using composition
 Think about the things that should be included in the room - This could be physical parts of the room, but furniture too
-Add at least one method to access an object via a getter and then access that object's public method, then add at least
-        one method to hide the object (not using a getter)
+Add at least one method to access an object via a getter and then access that object's public method.
+
+Your room must have at least 5 objects
+Each object must have some number of parameters that its constructor is accepting
