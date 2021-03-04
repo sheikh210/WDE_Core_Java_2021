@@ -8,10 +8,10 @@ public class Exceptions {
 
     // Exception Handling - A way to make a program more user-friendly (also a way to catch run-time exceptions)
 
-    public static void main(String[] args) {
-//
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Please enter a number: ");
+    public static void main(String[] args) throws Exception {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
 
         // Try-Catch(Finally) Block
 
@@ -19,9 +19,9 @@ public class Exceptions {
 //            int x = scanner.nextInt();
 //            System.out.println(x);
 //        } catch (Exception e) {
-//            e.printStackTrace();
+//            System.out.println("Incorrect Data Type --- Please try again");
 //        } finally {
-//            System.out.println("Sorry, wrong data type");
+//            System.out.println("Closing program");
 //        }
 
         try{
@@ -31,10 +31,11 @@ public class Exceptions {
         } finally {
             System.out.println("CANNOT DIVIDE BY ZERO");
         }
+
     }
 
 
-    public static int doDivision(int x, int y) {
+    public static int doDivision(int x, int y) throws Exception {
         return x / y;
     }
 

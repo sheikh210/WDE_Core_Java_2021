@@ -4,32 +4,20 @@ public class SingletonTest {
 
     public static void main(String[] args) {
 
-        SingletonClass obj1 = SingletonClass.getInstance();
-        SingletonClass obj2 = SingletonClass.getInstance();
-        SingletonClass obj3 = SingletonClass.getInstance();
+        SingletonPractice obj = SingletonPractice.getInstance();
+        SingletonPractice obj2 = SingletonPractice.getInstance();
 
-        System.out.println(obj1);
+        obj.age = 10;
+        obj2.age = 20;
+
+//        System.out.println(obj.age);
+//        System.out.println(obj2.age);
+
+        System.out.println(obj);
         System.out.println(obj2);
-        System.out.println(obj3);
 
-        obj1.setName("Taylor");
-        obj2.setName("Salah");
-        obj3.setName("Anaam");
-
-        System.out.println(obj1.getName());
-        System.out.println(obj2.getName());
-        System.out.println(obj3.getName());
-
-        obj2.setName("Alexandra");
-
-        System.out.println("********************");
-
-        System.out.println(obj1.getName());
-        System.out.println(obj2.getName());
-        System.out.println(obj3.getName());
 
 
     }
-
 
 }

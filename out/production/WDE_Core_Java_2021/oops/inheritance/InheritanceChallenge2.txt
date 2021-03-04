@@ -1,4 +1,5 @@
 ***INHERITANCE CHALLENGE 2***
+
 A carpet company has asked you to write an application that calculate the price of
 carpeting for rectangular rooms. To calculate the price, you multiply the area of
 the floor (width * length), by the price per square meter of the carpet.
