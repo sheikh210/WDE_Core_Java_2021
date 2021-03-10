@@ -4,4 +4,7 @@ Think about the things that should be included in the room - This could be physi
 Add at least one method to access an object via a getter and then access that object's public method.
 
 Your room must have at least 5 objects
-Each object must have some number of parameters that its constructor is accepting
+Each classes constructor must have at least 2 parameters that it is accepting & using it to initialize the class fields
+Each object(class) must have at least 2 methods
+
+Create a main (driver) class to construct your room

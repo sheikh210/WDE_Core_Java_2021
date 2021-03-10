@@ -17,5 +17,4 @@ public interface InterestRates {
     void doSomething();
     void doSomething2();
 
-
 }

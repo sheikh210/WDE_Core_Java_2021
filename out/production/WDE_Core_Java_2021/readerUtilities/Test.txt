@@ -1,0 +1,31 @@
+Look at us
+Using Java to
+read from text files
+
+Isn't this easy?
+
+We can read
+
+files
+
+
+no matter
+
+
+
+
+
+how many
+
+
+
+line breaks there
+
+
+
+
+
+
+are
+
+.
