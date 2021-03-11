@@ -13,10 +13,10 @@ import java.io.IOException;
 
 public class ReadExcelFiles {
 
-    XSSFWorkbook xssfWorkbook = null;
-    XSSFSheet xssfSheet = null;
-    XSSFRow xssfRows = null;
-    XSSFCell xssfCell = null;
+    XSSFWorkbook xssfWorkbook;
+    XSSFSheet xssfSheet;
+    XSSFRow xssfRows;
+    XSSFCell xssfCell;
 
     FileOutputStream fio = null;
     int numberOfRows, numberOfCol, rowNum;
@@ -34,13 +34,12 @@ public class ReadExcelFiles {
         }
 
         if (studentData != null) {
-
             for (String[] array : studentData) {
                 for (String s : array) {
                     System.out.println(s);
                 }
+                System.out.println();
             }
-            System.out.println();
         }
     }
 
@@ -51,6 +50,8 @@ public class ReadExcelFiles {
     // RETURNS ARRAY OF STRING ARRAYS (XSSF) - Excel sheet should have header row (this method will skip header row)
     public String[][] excelStringReader2D(String path, String sheetName) throws IOException {
         String[][] data;
+        String cellData;
+
         File file = new File(path);
         FileInputStream fis = new FileInputStream(file);
 
@@ -64,7 +65,7 @@ public class ReadExcelFiles {
             xssfRows = xssfSheet.getRow(i);
             for (int j = 0; j < numberOfCol; j++) {
                 xssfCell = xssfRows.getCell(j);
-                String cellData = getCellValue(xssfCell);
+                cellData = getCellValue(xssfCell);
                 data[i-1][j] = cellData;
             }
         }
@@ -196,7 +197,6 @@ public class ReadExcelFiles {
             default:
                 value = cell.getRawValue();
         }
-
         return value.toString();
     }
 
