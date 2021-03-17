@@ -17,6 +17,8 @@ public class NthOddNumber {
         System.out.println(getOddNumber(20)); // 39
         System.out.println(getOddNumber(50)); // 99
 
+        int randomNum = (int) (Math.random() * 100);
+        System.out.println(randomNum);
     }
 
     static int getOddNumber(int num) {

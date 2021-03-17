@@ -3,6 +3,7 @@ package dataStructures.collectionsFramework;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class Lists {
 
@@ -13,21 +14,24 @@ public class Lists {
      */
 
     public static void main(String[] args) {
+        List<Integer> linked = new LinkedList<>();
+        linked.add(10);
+
+        System.out.println(linked.get(0));
+
 
         // Creating a list
         List<Integer> list1 = new ArrayList<>();
 
-        List<Integer> linked = new LinkedList<>();
-        linked.add(500, 10);
 
         list1.add(10);
-        System.out.println(list1);
+        System.out.println(list1); // 10
 
-        list1.add(0, 5);
+        list1.add(0, 5); // [5, 10]
         System.out.println(list1);
 
         // Adds 25 at 1 index
-        list1.add(1, 25);
+        list1.add(1, 25); // [5, 25, 10]
         System.out.println(list1);
 
         // Creating another list
@@ -38,16 +42,15 @@ public class Lists {
 
 //        System.out.println("LIST 1 Size: " + list1.size());
 //        System.out.println("LIST 2 Size: " + list2.size());
-//
-//        list1.remove(1);
+
 //
 //        System.out.println();
 //        System.out.println(list1);
-//        System.out.println("LIST 1 Size: " + list1.size());
+        System.out.println("LIST 1 Size: " + list1.size());
 //        System.out.println("LIST 2 Size: " + list2.size());
 
         // Will add list l2 from 1 index
-        list1.addAll(1, list2);
+        list1.addAll(list2);
         System.out.println(list1.size());
 
         System.out.println(list1);
